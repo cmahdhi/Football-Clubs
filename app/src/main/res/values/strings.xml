@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Football Clubs</string>
+    <string name="welcome_message">Type a league name in the search bar to find your favorite football team.</string>
+    <string name="error_message">An error has occurred. please try again.</string>
+    <string name="error_retry">Retry</string>
+    <string name="search_hint">Enter league name</string>
+    <string name="team_banner_content_description">Team Banner</string>
+    <string name="team_badge_content_description">Team Badge</string>
+    <string name="clear_search_content_description">Clear search query</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/clubsListFragment">
+
+    <fragment
+        android:id="@+id/clubsListFragment"
+        android:name="com.chiheb.footballclubs.presentation.ui.ClubsListFragment"
+        tools:layout="@layout/fragment_clubs_list">
+
+        <action
+            android:id="@+id/to_club_details"
+            app:destination="@+id/clubDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/clubDetailsFragment"
+        android:name="com.chiheb.footballclubs.presentation.ui.ClubDetailsFragment"
+        tools:layout="@layout/fragment_club_details">
+
+        <argument
+            android:name="team"
+            app:argType="com.chiheb.footballclubs.presentation.models.Team" />
+    </fragment>
+</navigation>
